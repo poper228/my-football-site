@@ -1,0 +1,40 @@
+System.ArgumentException: Invalid package creation options: Package ID can only contain letters, digits, period, and hyphen.
+   at Microsoft.PWABuilder.Windows.Chromium.Services.WindowsAppPackageCreator.ValidateOptions(WindowsAppPackageOptions options) in C:\app\Services\WindowsAppPackageCreator.cs:line 124
+   at Microsoft.PWABuilder.Windows.Chromium.Services.WindowsAppPackageCreator.CreateAppPackage(WindowsAppPackageOptions options, AnalyticsInfo analyticsInfo) in C:\app\Services\WindowsAppPackageCreator.cs:line 67
+   at Microsoft.PWABuilder.Windows.Chromium.Controllers.MsixController.CreateAppPackage(WindowsAppPackageOptions options, HttpContext httpContext) in C:\app\Controllers\MsixController.cs:line 153
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+HEADERS
+=======
+Accept: */*
+Host: pwabuilder-windows-docker.azurewebsites.net
+User-Agent: node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Max-Forwards: 10
+Content-Length: 234
+Platform-Identifier: PWAStudio
+Correlation-Id: 34df2df6-0ac8-4a55-a47f-b4d51393e8c51753005644533
+X-ARR-LOG-ID: c76cad6b-f43f-4d8f-8c4f-1e01c79079a1
+CLIENT-IP: 85.234.100.90:53494
+DISGUISED-HOST: pwabuilder-windows-docker.azurewebsites.net
+X-SITE-DEPLOYMENT-ID: pwabuilder-windows-docker__43a5
+WAS-DEFAULT-HOSTNAME: pwabuilder-windows-docker.azurewebsites.net
+X-Forwarded-Proto: https
+X-AppService-Proto: https
+X-ARR-SSL: 2048|256|CN=Microsoft Azure RSA TLS Issuing CA 07, O=Microsoft Corporation, C=US|CN=*.azurewebsites.net, O=Microsoft Corporation, L=Redmond, S=WA, C=US
+X-Forwarded-TlsVersion: 1.3
+X-Forwarded-For: 85.234.100.90:53494
+X-Original-URL: /msix/generatezip
+X-WAWS-Unencoded-URL: /msix/generatezip
