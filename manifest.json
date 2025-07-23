@@ -1,6 +1,6 @@
 {
   "name": "Щекинская Футбольная Лига",
-  "short_name": "Футбол",
+  "short_name": "ЩФЛ",
   "id": "/index.html",
   "start_url": "/index.html",
   "display": "standalone",
