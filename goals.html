@@ -2,13 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Щекинская Футбольная Лига</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Щекинская Футбольная Лига — Бомбардиры</title>
+  <meta name="theme-color" content="#0E0D0E">
+
+  <link rel="stylesheet" href="/my-football-site/style.css">
+  <link rel="manifest" href="/my-football-site/manifest.json">
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/my-football-site/service-worker.js")
+        .then(reg => console.log("Service Worker зарегистрирован", reg))
+        .catch(err => console.error("Ошибка при регистрации Service Worker", err));
+    }
+  </script>
 </head>
 <body>
   <div id="container">
     <header id="header">
-      <img src="photos/logo2.png" alt="логотип" class="logo">
+      <img src="/my-football-site/photos/logo2.png" alt="логотип" class="logo">
       <div class="header-text">
         <h1>Щекинская Футбольная Лига</h1>
         <p class="subtitle">Турнир по мини-футболу среди любителей в г. Щекино. Создан в 2025 году. Ждем энергичные и амбициозные команды, готовые показать красивый и изящный футбол.</p>
@@ -18,11 +30,11 @@
     <div id="main">
       <aside id="left">
         Остальная информация:<br>
-        <a href="index.html">О турнире</a><br>
-        <a href="teams.html">Команды</a><br>
-        <a href="goals.html">Список Бомбардиров</a><br>
-        <a href="assists.html">Список Ассистентов</a><br>
-        <a href="webs.html">Подайте заявку на участие в турнире</a><br>
+        <a href="/my-football-site/index.html">О турнире</a><br>
+        <a href="/my-football-site/teams.html">Команды</a><br>
+        <a href="/my-football-site/goals.html">Список Бомбардиров</a><br>
+        <a href="/my-football-site/assists.html">Список Ассистентов</a><br>
+        <a href="/my-football-site/webs.html">Подайте заявку на участие в турнире</a><br>
       </aside>
 
       <section id="content">
@@ -37,48 +49,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Щекино Юнайтед</td>
-              <td>Иванов</td>
-              <td>12</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Гранит</td>
-              <td>Петров</td>
-              <td>10</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Смена</td>
-              <td>Сидоров</td>
-              <td>9</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Восход</td>
-              <td>Михайлов</td>
-              <td>8</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Титан</td>
-              <td>Кузнецов</td>
-              <td>7</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Темп</td>
-              <td>Федоров</td>
-              <td>6</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Заря</td>
-              <td>Алексеев</td>
-              <td>5</td>
-              <td>1</td>
-            </tr>
+            <tr><td>Щекино Юнайтед</td><td>Иванов</td><td>12</td><td>2</td></tr>
+            <tr><td>Гранит</td><td>Петров</td><td>10</td><td>1</td></tr>
+            <tr><td>Смена</td><td>Сидоров</td><td>9</td><td>3</td></tr>
+            <tr><td>Восход</td><td>Михайлов</td><td>8</td><td>0</td></tr>
+            <tr><td>Титан</td><td>Кузнецов</td><td>7</td><td>2</td></tr>
+            <tr><td>Темп</td><td>Федоров</td><td>6</td><td>1</td></tr>
+            <tr><td>Заря</td><td>Алексеев</td><td>5</td><td>1</td></tr>
           </tbody>
         </table>
       </section>

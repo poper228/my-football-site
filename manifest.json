@@ -1,8 +1,8 @@
 {
   "name": "Щекинская Футбольная Лига",
   "short_name": "ЩФЛ",
-  "id": "/index.html",
-  "start_url": "/index.html",
+  "id": "/my-football-site/index.html",
+  "start_url": "/my-football-site/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0E0D0E",
@@ -12,13 +12,13 @@
   "description": "Расписание матчей, турнирная таблица и новости Щекинской футбольной лиги.",
   "icons": [
     {
-      "src": "logo3.png",
+      "src": "/my-football-site/logo3.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "logo2.png",
+      "src": "/my-football-site/logo2.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -26,14 +26,14 @@
   ],
   "screenshots": [
     {
-      "src": "screen.jpg",
+      "src": "/my-football-site/screen.jpg",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
       "description": "Версия для компьютера"
     },
     {
-      "src": "screen (2).jpg",
+      "src": "/my-football-site/screen (2).jpg",
       "sizes": "750x1334",
       "type": "image/png",
       "description": "Версия для телефона"
@@ -42,11 +42,11 @@
   "shortcuts": [
     {
       "name": "Турнирная таблица",
-      "url": "/table.html",
+      "url": "/my-football-site/table.html",
       "description": "Быстрый переход к таблице турнира",
       "icons": [
         {
-          "src": "logo5.png",
+          "src": "/my-football-site/logo5.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -54,11 +54,11 @@
     },
     {
       "name": "Расписание матчей",
-      "url": "/schedule.html",
+      "url": "/my-football-site/schedule.html",
       "description": "Быстрый переход к расписанию игр",
       "icons": [
         {
-          "src": "logo5.png",
+          "src": "/my-football-site/logo5.png",
           "sizes": "96x96",
           "type": "image/png"
         }

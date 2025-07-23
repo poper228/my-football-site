@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <title>Щекинская Футбольная Лига</title>
-  <link rel="stylesheet" href="style.css">
 
+  <!-- Правильный путь к стилю -->
+  <link rel="stylesheet" href="/my-football-site/style.css">
 
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0E0D0E">
-<script>navigator.serviceWorker.register("service-worker.js")</script> 
-<link rel="manifest" href="manifest.json" />
+  <!-- Только один manifest -->
+  <link rel="manifest" href="/my-football-site/manifest.json">
+  <meta name="theme-color" content="#0E0D0E">
 </head>
 <body>
   <div id="container">
     <header id="header">
-      <img src="photos/logo2.png" alt="логотип" class="logo">
+      <img src="/my-football-site/photos/logo2.png" alt="логотип" class="logo">
       <div class="header-text">
         <h1>Щекинская Футбольная Лига</h1>
         <p class="subtitle">
@@ -24,16 +24,15 @@
     </header>
 
     <div id="main" style="display: flex; gap: 20px; min-height: 100vh;">
-
       <aside id="left" style="width: 240px; background-color: rgb(158, 158, 158); padding: 20px; border-radius: 25pt 20pt; font-size: 25px; font-family: 'Compacta BT', serif;">
         Остальная информация:<br>
-        <a href="index.html">О турнире</a><br>
-        <a href="teams.html">Команды</a><br>
-        <a href="goals.html">Список Бомбардиров</a><br>
-        <a href="assists.html">Список Ассистентов</a><br>
-        <a href="webs.html">Подайте заявку на участие в турнире</a><br>
+        <a href="/my-football-site/index.html">О турнире</a><br>
+        <a href="/my-football-site/teams.html">Команды</a><br>
+        <a href="/my-football-site/goals.html">Список Бомбардиров</a><br>
+        <a href="/my-football-site/assists.html">Список Ассистентов</a><br>
+        <a href="/my-football-site/webs.html">Подайте заявку на участие в турнире</a><br>
       </aside>
-      
+
       <section id="content" style="flex: 1; padding: 20px; font-size: 20px; font-family: 'Compacta BT', sans-serif; background-color: white; border-radius: 15px;">
         <p>
           Любительский турнир 7 на 7 — Щёкино, лето 2025<br>
@@ -58,17 +57,16 @@
 
         <div class="simple-slider">
           <div class="slides">
-            <img src="photos/ph1.jpg" class="slide active" alt="Фото 1">
-            <img src="photos/ph2.jpg" class="slide" alt="Фото 2">
-            <img src="photos/ph3.jpg" class="slide" alt="Фото 3">
-            <img src="photos/ph4.jpg" class="slide" alt="Фото 4">
-            <img src="photos/ph5.jpg" class="slide" alt="Фото 5">
+            <img src="/my-football-site/photos/ph1.jpg" class="slide active" alt="Фото 1">
+            <img src="/my-football-site/photos/ph2.jpg" class="slide" alt="Фото 2">
+            <img src="/my-football-site/photos/ph3.jpg" class="slide" alt="Фото 3">
+            <img src="/my-football-site/photos/ph4.jpg" class="slide" alt="Фото 4">
+            <img src="/my-football-site/photos/ph5.jpg" class="slide" alt="Фото 5">
           </div>
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
 
-        <!-- Нижний блок -->
         <div id="bottom" style="margin-top: 20px; padding: 15px; background-color: #ddd; border-top: 2px solid #bbb; border-radius: 10px; font-style: italic; font-size: 18px; text-align: center;">
           ℹ️ Следите за обновлениями расписания на нашем сайте и в соцсетях!
         </div>
@@ -78,22 +76,20 @@
         <h3>Новости</h3>
         <p>📣 Регистрация открыта до 1 июня!</p>
         <p>🔥 В новом сезоне — призы для лучших болельщиков!</p>
-        
       </aside>
-
     </div>
-
   </div>
 
-  <script src="slider.js"></script>
-  <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js")
-      .then(reg => console.log("SW зарегистрирован", reg))
-      .catch(err => console.error("SW ошибка", err));
-  }
-</script>
+  <!-- Подключение скрипта с правильным путём -->
+  <script src="/my-football-site/slider.js"></script>
 
+  <!-- Правильный путь к сервис-воркеру -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/my-football-site/service-worker.js")
+        .then(reg => console.log("SW зарегистрирован", reg))
+        .catch(err => console.error("SW ошибка", err));
+    }
+  </script>
 </body>
 </html>
-
